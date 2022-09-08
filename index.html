@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <title>Vacation</title>
+
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+  <link href="libs/bootstrap/bootstrap-grid.min.css" rel="stylesheet">
+  <link href="libs/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="libs/rating_jquery/css/demo.css" rel="stylesheet">
+  <link href="libs/mmenu/dist/jquery.mmenu.all.css" rel="stylesheet">
+
+  <link href="css/fonts.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/media.css" rel="stylesheet">
+
+</head>
+<body>
+  <a href="#" class="pick-up-the-tour open_popup hidden-xs" rel="popup1"></a>
+  <div id="wrapper">
+    <header class="header" style="background-image: url(img/bg_header.jpg);">
+      <div class="header-contacts">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-5 logo-wrap">
+              <button id="mmenu-icon" class="hamburger left hidden-lg hidden-md hidden-sm" type="button"></button>
+              <a href="#" class="logo">
+                <img src="img/logoooooo.png" alt="Отпуск в лето">
+              </a>
+            </div>
+            <div class="col-lg-7 col-md-6 col-sm-6 hidden-xs">
+              <div class="address">
+                <span>Мы находимся</span>
+                <p>г. Санкт-Петербург <br>м. Садовая, ул. Ефимова, д. 4А, оф 320</p>
+              </div>
+              <div class="time hidden-sm">
+                <span>Часы работы:</span>
+                <p>Пн-Пт с 11:00 до 20:00; <br>Сб-Вс - выходной</p>
+              </div>
+              <div class="tel">
+                <span>Контактный телефон</span>
+                <p>+7 (812) 309 04 49</p>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 clearfix phone">
+              <button id="" class="btn-phone right hidden-lg hidden-md hidden-sm" type="button"></button>
+              <button class="btn-1 hidden-xs">Заказать звонок</button>
+              <p class="p-phone right hidden-lg hidden-md hidden-sm">+7 (812) 309 04 49</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav id="my-menu">
+        <ul>
+          <li><a href="#">Поиск туров</a></li>
+          <li><a href="#">О нас</a></li>
+          <li><a href="#">Страны</a></li>
+          <li><a href="#">Туры со скидками</a></li>
+          <li><a href="#">Контакты</a></li>
+          <li><a href="#">Это интересно</a></li>
+          <li><a href="#">Скидки</a></li>
+          <li><a href="#">Авиабилеты</a></li>
+          <li><a href="#">Туры в Японию</a></li>
+          <li><a href="#">Морские круизы</a></li>
+          <li><a href="#">Оплата Online</a></li>
+        </ul>
+      </nav>
+
+      <nav class="menu hidden-xs">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <ul class="clearfix">
+                <li><a href="#">Поиск туров</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Страны</a></li>
+                <li><a href="#">Туры со скидками</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Это интересно</a></li>
+                <li><a href="#">Скидки</a></li>
+                <li><a href="#">Авиабилеты</a></li>
+                <li><a href="#">Туры в Японию</a></li>
+                <li><a href="#">Морские круизы</a></li>
+                <li><a href="#">Оплата Online</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="header-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+              <div class="title">
+                <p>Устроить <span>отпуск</span> своей мечты</p>
+                <h1>Просто и легко!</h1>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12 col-sm-offset-0 col-xs-10 col-xs-offset-1 form1-wrap">
+              <div class="form1">
+                <form action="#">
+                  <div class="form1-top clearfix">
+                    <p class="city-departure">
+                      <label for="city-departure">Город вылета</label>
+                      <select name="#" id="city-departure">
+                        <option value="">Милан</option>
+                        <option value="">Варшава</option>
+                        <option value="">Брест</option>
+                        <option value="">Киев</option>
+                        <option value="">Рим</option>
+                        <option value="">Берлин</option>
+                        <option value="">Минск</option>
+                      </select>
+                    </p>
+                    <p class="country">
+                      <label for="country">Страна:</label>
+                      <input type="text" name="#" id="country" placeholder="Турция">
+                    </p>
+                    <p class="date-departure">
+                      <label for="date-departure">Дата вылета</label>
+                      <input type="text" name="#" id="date-departure" placeholder="28 апр - 7 мая">
+                    </p>
+                    <p class="night">
+                      <label for="night">Ночей</label>
+                      <input type="text" name="#" id="night" placeholder="6 - 7">
+                    </p>
+                    <p class="number-persons">
+                      <label for="number-persons">Кол-во человек</label>
+                      <input type="text" name="#" id="number-persons" placeholder="2 взрослых">
+                    </p>
+                  </div>
+                  <div class="form1-bottom clearfix">
+                    <div class="hotel-class">
+                      <label>Класс отеля от</label>
+                      <div class="rate2"></div>
+                    </div>
+                    <p class="resort">
+                      <label for="resort">Курорт/отель</label>
+                      <select name="#" id="resort">
+                        <option value="">Любое</option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                      </select>
+                    </p>
+                    <p class="hotel-type">
+                      <label for="hotel-type">Тип отеля</label>
+                      <select name="#" id="hotel-type">
+                        <option value="">Любое</option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                      </select>
+                    </p>
+                    <p class="food">
+                      <label for="food">Питание от</label>
+                      <select name="#" id="food">
+                        <option value="">Любое</option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                      </select>
+                    </p>
+                    <p class="hotel-rating">
+                      <label for="hotel-rating">Рейтинг отеля</label>
+                      <select name="#" id="hotel-rating">
+                        <option value="">Любое</option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                      </select>
+                    </p>
+                  </div>
+                  <button class="btn-2">Найти тур</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="tours">
+      <div class="container">
+        <div class="category">
+          <h4>Более 200 предложений</h4>
+          <h2>Горящие туры</h2>
+          <a href="#">Перейти в каталог</a>
+        </div>
+        <div class="tours-wrap clearfix">
+          <div class="row">
+            <div class="col-md-3 col-sm-4 col-xs-6 tours-wrapper">
+              <a href="#">
+                <p class="lowering">-33%</p>
+                <div class="tours-item">
+                  <div class="img-wrap">
+                    <img src="img/tours2.png" alt="Фото">
+                  </div>
+                  <div class="description clearfix">
+                    <div class="desc-info left">
+                      <p><span>Мармарис, </span>Турция</p>
+                      <div class="star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </div>
+                      <p>из Санкт-Петербурга <br>14 мая, 7 ночей</p>
+                    </div>
+                    <div class="desc-price right">
+                      <p>15 308 <span>Р.</span></p>
+                      <span>22 022 Р.</span>
+                      <p>-33%</p>
+                    </div>
+                    <button href="#" class="bth-tour">Выбрать тур</button>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-6 tours-wrapper">
+              <a href="#">
+                <p class="lowering">-33%</p>
+                <div class="tours-item">
+                  <div class="img-wrap">
+                    <img src="img/tours2.png" alt="Фото">
+                  </div>
+                  <div class="description clearfix">
+                    <div class="desc-info left">
+                      <p><span>Мармарис, </span>Турция</p>
+                      <div class="star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </div>
+                      <p>из Санкт-Петербурга <br>14 мая, 7 ночей</p>
+                    </div>
+                    <div class="desc-price right">
+                      <p>15 308 <span>Р.</span></p>
+                      <span>22 022 Р.</span>
+                      <p>-33%</p>
+                    </div>
+                    <button href="#" class="bth-tour">Выбрать тур</button>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-6 tours-wrapper">
+              <a href="#">
+                <p class="lowering">-33%</p>
+                <div class="tours-item">
+                  <div class="img-wrap">
+                    <img src="img/tours2.png" alt="Фото">
+                  </div>
+                  <div class="description clearfix">
+                    <div class="desc-info left">
+                      <p><span>Мармарис, </span>Турция</p>
+                      <div class="star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </div>
+                      <p>из Санкт-Петербурга <br>14 мая, 7 ночей</p>
+                    </div>
+                    <div class="desc-price right">
+                      <p>15 308 <span>Р.</span></p>
+                      <span>22 022 Р.</span>
+                      <p>-33%</p>
+                    </div>
+                    <button href="#" class="bth-tour">Выбрать тур</button>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-6 tours-wrapper">
+              <a href="#">
+                <p class="lowering">-33%</p>
+                <div class="tours-item">
+                  <div class="img-wrap">
+                    <img src="img/tours2.png" alt="Фото">
+                  </div>
+                  <div class="description clearfix">
+                    <div class="desc-info left">
+                      <p><span>Мармарис, </span>Турция</p>
+                      <div class="star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </div>
+                      <p>из Санкт-Петербурга <br>14 мая, 7 ночей</p>
+                    </div>
+                    <div class="desc-price right">
+                      <p>15 308 <span>Р.</span></p>
+                      <span>22 022 Р.</span>
+                      <p>-33%</p>
+                    </div>
+                    <button href="#" class="bth-tour">Выбрать тур</button>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-6 tours-wrapper hidden-xs">
+              <a href="#">
+                <p class="lowering">-33%</p>
+                <div class="tours-item">
+                  <div class="img-wrap">
+                    <img src="img/tours2.png" alt="Фото">
+                  </div>
+                  <div class="description clearfix">
+                    <div class="desc-info left">
+                      <p><span>Мармарис, </span>Турция</p>
+                      <div class="star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </div>
+                      <p>из Санкт-Петербурга <br>14 мая, 7 ночей</p>
+                    </div>
+                    <div class="desc-price right">
+                      <p>15 308 <span>Р.</span></p>
+                      <span>22 022 Р.</span>
+                      <p>-33%</p>
+                    </div>
+                    <button href="#" class="bth-tour">Выбрать тур</button>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-6 tours-wrapper hidden-xs">
+              <a href="#">
+                <p class="lowering">-33%</p>
+                <div class="tours-item">
+                  <div class="img-wrap">
+                    <img src="img/tours2.png" alt="Фото">
+                  </div>
+                  <div class="description clearfix">
+                    <div class="desc-info left">
+                      <p><span>Мармарис, </span>Турция</p>
+                      <div class="star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </div>
+                      <p>из Санкт-Петербурга <br>14 мая, 7 ночей</p>
+                    </div>
+                    <div class="desc-price right">
+                      <p>15 308 <span>Р.</span></p>
+                      <span>22 022 Р.</span>
+                      <p>-33%</p>
+                    </div>
+                    <button href="#" class="bth-tour">Выбрать тур</button>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-6 tours-wrapper hidden-xs">
+              <a href="#">
+                <p class="lowering">-33%</p>
+                <div class="tours-item">
+                  <div class="img-wrap">
+                    <img src="img/tours2.png" alt="Фото">
+                  </div>
+                  <div class="description clearfix">
+                    <div class="desc-info left">
+                      <p><span>Мармарис, </span>Турция</p>
+                      <div class="star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </div>
+                      <p>из Санкт-Петербурга <br>14 мая, 7 ночей</p>
+                    </div>
+                    <div class="desc-price right">
+                      <p>15 308 <span>Р.</span></p>
+                      <span>22 022 Р.</span>
+                      <p>-33%</p>
+                    </div>
+                    <button href="#" class="bth-tour">Выбрать тур</button>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-6 tours-wrapper hidden-xs">
+              <a href="#">
+                <p class="lowering">-33%</p>
+                <div class="tours-item">
+                  <div class="img-wrap">
+                    <img src="img/tours2.png" alt="Фото">
+                  </div>
+                  <div class="description clearfix">
+                    <div class="desc-info left">
+                      <p><span>Мармарис, </span>Турция</p>
+                      <div class="star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </div>
+                      <p>из Санкт-Петербурга <br>14 мая, 7 ночей</p>
+                    </div>
+                    <div class="desc-price right">
+                      <p>15 308 <span>Р.</span></p>
+                      <span>22 022 Р.</span>
+                      <p>-33%</p>
+                    </div>
+                    <button href="#" class="bth-tour">Выбрать тур</button>
+                  </div>
+                </div>
+              </a>
+          </div>
+          <!-- <div class="row">
+            <div class="col-md-3 col-sm-4">
+              <a href="#">
+                <p class="lowering">-33%</p>
+                <div class="tours-item">
+                  <div class="img-wrap">
+                    <img src="img/tours2.png" alt="Фото">
+                  </div>
+                  <div class="description clearfix">
+                    <div class="desc-info left">
+                      <p><span>Мармарис, </span>Турция</p>
+                      <div class="star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </div>
+                      <p>из Санкт-Петербурга <br>14 мая, 7 ночей</p>
+                    </div>
+                    <div class="desc-price right">
+                      <p>15 308 <span>Р.</span></p>
+                      <span>22 022 Р.</span>
+                      <p>-33%</p>
+                    </div>
+                    <button href="#" class="bth-tour">Выбрать тур</button>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-3 col-sm-4">
+              <a href="#">
+                <p class="lowering">-33%</p>
+                <div class="tours-item">
+                  <div class="img-wrap">
+                    <img src="img/tours2.png" alt="Фото">
+                  </div>
+                  <div class="description clearfix">
+                    <div class="desc-info left">
+                      <p><span>Мармарис, </span>Турция</p>
+                      <div class="star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </div>
+                      <p>из Санкт-Петербурга <br>14 мая, 7 ночей</p>
+                    </div>
+                    <div class="desc-price right">
+                      <p>15 308 <span>Р.</span></p>
+                      <span>22 022 Р.</span>
+                      <p>-33%</p>
+                    </div>
+                    <button href="#" class="bth-tour">Выбрать тур</button>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-3 col-sm-4">
+              <a href="#">
+                <p class="lowering">-33%</p>
+                <div class="tours-item">
+                  <div class="img-wrap">
+                    <img src="img/tours2.png" alt="Фото">
+                  </div>
+                  <div class="description clearfix">
+                    <div class="desc-info left">
+                      <p><span>Мармарис, </span>Турция</p>
+                      <div class="star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </div>
+                      <p>из Санкт-Петербурга <br>14 мая, 7 ночей</p>
+                    </div>
+                    <div class="desc-price right">
+                      <p>15 308 <span>Р.</span></p>
+                      <span>22 022 Р.</span>
+                      <p>-33%</p>
+                    </div>
+                    <button href="#" class="bth-tour">Выбрать тур</button>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-3 col-sm-4">
+              <a href="#">
+                <p class="lowering">-33%</p>
+                <div class="tours-item">
+                  <div class="img-wrap">
+                    <img src="img/tours2.png" alt="Фото">
+                  </div>
+                  <div class="description clearfix">
+                    <div class="desc-info left">
+                      <p><span>Мармарис, </span>Турция</p>
+                      <div class="star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </div>
+                      <p>из Санкт-Петербурга <br>14 мая, 7 ночей</p>
+                    </div>
+                    <div class="desc-price right">
+                      <p>15 308 <span>Р.</span></p>
+                      <span>22 022 Р.</span>
+                      <p>-33%</p>
+                    </div>
+                    <button href="#" class="bth-tour">Выбрать тур</button>
+                  </div>
+                </div>
+              </a>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="directory-countries" style="background-image: url(img/bg_directory-countries.jpg);">
+      <div class="container">
+        <div class="category">
+          <h4>Экзотические уголки мира</h4>
+          <h2>Каталог стран</h2>
+        </div>
+        <div class="row">
+          <div class="countries clearfix">
+            <div class="col-md-3 col-sm-3 col-xs-3 countries-column">
+              <ul>
+                <li><img src="img/countries/turkey.png" alt="turkey"><a href="#">Турция</a></li>
+                <li><img src="img/countries/egypt.png" alt="egypt"><a href="#">Египет</a></li>
+                <li><img src="img/countries/thailand.png" alt="thailand"><a href="#">Таиланд</a></li>
+                <li><img src="img/countries/greece.png" alt="greece"><a href="#">Греция</a></li>
+                <li><img src="img/countries/cyprus.png" alt="cyprus"><a href="#">Кипр</a></li>
+                <li><img src="img/countries/UAE.png" alt="UAE"><a href="#">ОАЭ</a></li>
+                <li><img src="img/countries/israel.png" alt="israel"><a href="#">Израиль</a></li>
+                <li><img src="img/countries/bulgaria.png" alt="bulgaria"><a href="#">Болгария</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-3 countries-column">
+              <ul>
+                <li><img src="img/countries/tunisia.png" alt="tunisia"><a href="#">Тунис</a></li>
+                <li><img src="img/countries/spain.png" alt="spain"><a href="#">Испания</a></li>
+                <li><img src="img/countries/italy.png" alt="italy"><a href="#">Италия</a></li>
+                <li><img src="img/countries/dominicana.png" alt="dominicana"><a href="#">Доминикана</a></li>
+                <li><img src="img/countries/cuba.png" alt="cuba"><a href="#">Куба</a></li>
+                <li><img src="img/countries/mexico.png" alt="mexico"><a href="#">Мексика</a></li>
+                <li><img src="img/countries/croatia.png" alt="croatia"><a href="#">Хорватия</a></li>
+                <li><img src="img/countries/montenegro.png" alt="montenegro"><a href="#">Черногори</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-3 countries-column">
+              <ul>
+                <li><img src="img/countries/czech.png" alt="czech"><a href="#">Чехия</a></li>
+                <li><img src="img/countries/vietnam.png" alt="vietnam"><a href="#">Вьетнам</a></li>
+                <li><img src="img/countries/indonesia.png" alt="indonesia"><a href="#">Индонезия</a></li>
+                <li><img src="img/countries/kenya.png" alt="kenya"><a href="#">Кения</a></li>
+                <li><img src="img/countries/mauritius.png" alt="mauritius"><a href="#">Маврикий</a></li>
+                <li><img src="img/countries/maldives.png" alt="maldives"><a href="#">Мальдивы</a></li>
+                <li><img src="img/countries/portugal.png" alt="portugal"><a href="#">Португалия</a></li>
+                <li><img src="img/countries/seychelles.png" alt="seychelles"><a href="#">Сейшелы</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-3 countries-column">
+              <ul>
+                <li><img src="img/countries/USA.png" alt="USA"><a href="#">США</a></li>
+                <li><img src="img/countries/sri-lanka.png" alt="sri-lanka"><a href="#">Шри-Ланка</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="deal-of-the-day" style="background-image: url(img/bg_deal-of-the-day.jpg);">
+      <div class="container">
+        <div class="title-deal">
+          <h1>Предложение дня!</h1>
+          <p>Только сегодня!</p>
+        </div>
+        <div class="row">
+          <div class="deal-wrap clearfix">
+            <div class="col-lg-2 col-md-3 col-sm-3 col-xs-3 deal-block">
+              <p>Туры по России</p>
+              <a href="#">Узнать подробнее</a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4 deal-block">
+              <p>Дешевые авиабилеты!!!</p>
+              <a href="#">Узнать подробнее</a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4 deal-block">
+              <p>Дешевые авиабилеты!!!</p>
+              <a href="#">Узнать подробнее</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="news">
+      <div class="container">
+        <div class="category">
+          <h4>Что происходит в мире</h4>
+          <h2>Новости туризма</h2>
+          <a href="#">Читать все новости</a>
+        </div>
+        <div class="row">
+          <div class="news-wrap clearfix">
+            <div class="col-md-6 col-xs-6 news-article">
+              <a href="#">
+                <article>
+                  <img src="img/news2.png" alt="Фото">
+                  <div class="news-item">
+                    <h5>Почти 40 мадридских ресторанов предложат галисийские блюда из осьминога</h5>
+                    <span>27.04.2017</span>
+                    <p>С 28 апреля по 15 мая в автономном сообществе Мадрид пройдет Второй гастрономический маршрут Pulpo Pasión, участие в котором примут 39 ресторанов испанской столицы и её окрестностей (полный список заведений представлен на странице...</p>
+                  </div>
+                </article>
+              </a>
+            </div>
+            <div class="col-md-6 col-xs-6 news-article">
+              <a href="#">
+                <article>
+                  <img src="img/news1.png" alt="Фото">
+                  <div class="news-item">
+                    <h5>Факты о самых необычных музеях Швейцарии</h5>
+                    <span>27.04.2017</span>
+                    <p>Известно, что на небольшую Швейцарию приходится аж 1111 музеев, посетителями которых являются свыше 12 миллионов человек в год. Есть всем известные классические музеи, но есть и необычные. Предлагаем вашему вниманию факты о самых необычных музеях Швейцарии.</p>
+                  </div>
+                </article>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about-us" style="background-image: url(img/bg_about-us.jpg);">
+      <div class="container">
+        <div class="category">
+          <h4>Кто мы?</h4>
+          <h2>Пару слов о нас</h2>
+        </div>
+        <div class="row">
+          <div class="about-us-wrap clearfix">
+            <div class="col-md-6 col-xs-12">
+              <p>Хороший отдых доступен каждому, но не каждый об этом знает. Огромное количество предложений и вариантов решений туристического вопроса может ввести в ступор практически любого будущего путешественника. Поэтому мы всегда готовы помочь вам найти свой отпуск в лето. Мы подберем Тот Самый вариант в огромном океане предложений, который будет максимально соответствовать вашим желаниям и взглядам на отдых. Потому что мы считаем, что отсутствие времени или даже скромный бюджет – это еще не повод, чтобы отказываться от путешествия!</p>
+              <a href="#" class="disp-none">Подробнее</a>
+              <h5>Горящие туры из Санкт-Петербурга</h5>
+              <p class="p-item">Одни из самых востребованных туров - это "горящие туры" (иногда их называют "горячие туры"). Давайте разберемся, что же это такое? А означать это понятие может следующее: туроператор выкупил много мест на авиарейс, или же весь авиарейс с целью снижения цены на туристический продукт, и у него остались билеты на ближайшие вылеты; у туроператора множество предложений, которые он просто не успевает продать вовремя; и, наконец, кто-то купил тур, и по каким-либо причинам отказался от него.</p>
+            </div>
+            <div class="col-md-6 col-xs-12">
+              <p class="p-item">Существует и ряд других причин, однако, следствие одно - туры предлагаются с большой скидкой. Скидки на такой тур из Санкт-Петербурга могут достигать 50 и даже 70 процентов от его первоначальной стоимости! Это и делает их столь привлекательными для туристов.</p>
+              <p class="p-item">Но, стоит помнить, что купить "горящий тур" можно отнюдь не всегда и не на любой курорт. Множество направление имеет такую возможность, среди них горящие туры в Египет, Турцию, ОАЭ, Кипр, Таиланд, Мексика, Куба, Греция. Чаще всего это страны, въезд в которые безвизовый, или виза ставится по прилету. Если вы обладатель Шенгенской визы, то у вас есть шанс купить что-нибудь "погорячее" в такие страны, как Чехия, Италия, Испания, Венгрия, а также в Болгарию и на Кипр. В страны, въезд в которые ограничен визой, купить такой уже тяжелее, а иногда и не имеет смысла. Но не только виза может стать помехой на пути к отличной цене. В дни школьных каникул и государственных праздников большинство петербуржцев стремится уехать отдыхать, и чаще всего они покупают путевки по раннему бронированию, поэтому и "гореть" в эти дни просто-напросто нечему. Также редко бывают большие скидки на туры с большой продолжительностью. Итак, если вы едете отдыхать парой или один, ищете тур с вылетом в ближайшие дни в безвизовую страну продолжительностью 5-8 дней - у вас есть все шансы купить "горящий тур" из Петербурга!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="footer" style="background-color: #323840;">
+      <div class="container">
+        <div class="row clearfix">
+          <div class="col-lg-3 col-md-3 col-sm-5 col-xs-5 f-logo-wrap">
+            <div class="f-logo">
+              <img src="img/logoooooo.png" alt="Логотип">
+              <p class="copy">&copy;2012-2014 "Отпуск в лето"СПБ. Копирование <br>материалов с сайта запрещено</p>
+              <a href="#">Карта сайта</a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-3 col-xs-3 menu-wrap">
+            <ul class="menu-one left">
+              <li><a href="#">Поиск туров</a></li>
+              <li><a href="#">О нас</a></li>
+              <li><a href="#">Страны</a></li>
+              <li><a href="#">Туры со скидками</a></li>
+              <li><a href="#">Контакты</a></li>
+              <li><a href="#">Это интересно</a></li>
+            </ul>
+            <ul class="menu-two right">
+              <li><a href="#">Скидки</a></li>
+              <li><a href="#">Авиабилеты</a></li>
+              <li><a href="#">Туры в Японию</a></li>
+              <li><a href="#">Морские круизы</a></li>
+              <li><a href="#">Оплата Online</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-5 col-md-5 col-sm-4 col-xs-4 contacts-wrap">
+            <div class="address-wrap">
+              <div class="address">
+                <span>Мы находимся</span>
+                <p>г. Санкт-Петербург <br>м. Садовая, ул. Ефимова, д. 4А, оф 320</p>
+              </div>
+              <div class="time">
+                <span>Часы работы:</span>
+                <p>Пн-Пт с 11:00 до 20:00; <br>Сб-Вс - выходной</p>
+              </div>
+            </div>
+            <div class="tel right">
+              <span>Контактный телефон</span>
+              <p>+7 (812) 309 04 49</p>
+              <button class="btn-1">Заказать звонок</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+
+  <!-- popup -->
+
+
+
+  <div class="overlay"></div>
+  <div class="popup popup-step" id="popup1">
+    <span class="close"></span>
+    <div class="popup-wrap">
+      <div class="popup-step-one clearfix">
+        <h1>Хотите подобрать тур?</h1>
+        <p>Лучшие предложения по оптимальным ценам <span>в 3 шага</span></p>
+        <div class="breadcrumb clearfix">
+          <ul>
+            <li class="left step1"><a href="#">Шаг 1</a></li>
+            <li class="left step2"><a href="#" class="open_popup_2" rel="popup3">Шаг 2</a></li>
+            <li class="left step3"><a href="#" class="open_popup_3" rel="popup3">Шаг 3</a></li>
+          </ul>
+        </div>
+        <p class="p-form-popup-step-one">Где хотите отдохнуть?</p>
+        <form action="#" class="form-popup-step-one">
+          <label for="state">Выберите страну</label>
+          <select name="#" id="state">
+            <option value="">Турция</option>
+            <option value="">Милан</option>
+            <option value="">Варшава</option>
+            <option value="">Брест</option>
+            <option value="">Киев</option>
+            <option value="">Рим</option>
+            <option value="">Берлин</option>
+            <option value="">Минск</option>
+          </select>
+        </form>
+        <button class="btn-1 open_popup_2" rel="popup3">Продолжить</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="overlay"></div>
+  <div class="popup popup-step" id="popup3">
+    <span class="close"></span>
+    <div class="popup-wrap">
+      <div class="popup-step-two clearfix">
+        <h1>Хотите подобрать тур?</h1>
+        <p>Лучшие предложения по оптимальным ценам <span>в 3 шага</span></p>
+        <div class="breadcrumb clearfix">
+          <ul>
+            <li class="left step1"><a href="#" class="open_popup_1" rel="popup1">Шаг 1</a></li>
+            <li class="left step2"><a href="#">Шаг 2</a></li>
+            <li class="left step3"><a href="#" class="open_popup_3" rel="popup4">Шаг 3</a></li>
+          </ul>
+        </div>
+        <p class="p-form-popup-step-one">Какая дата вылета Вам будет удобна?</p>
+        <form action="#" class="form-popup-step-one">
+          <label for="select-date">Выберите дату</label>
+          <div class="i-select-date">
+            <input type="text" name="select-date" id="select-date" placeholder="20.05.2017 - 27.05.2017">
+            <input type="button" name="" id="">
+          </div>
+        </form>
+        <button class="btn-1 open_popup_3">Продолжить</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="overlay"></div>
+  <div class="popup popup-step" id="popup4">
+    <span class="close"></span>
+    <div class="popup-wrap">
+      <div class="popup-step-three clearfix">
+        <h1>Хотите подобрать тур?</h1>
+        <p>Лучшие предложения по оптимальным ценам <span>в 3 шага</span></p>
+        <div class="breadcrumb clearfix">
+          <ul>
+            <li class="left step1"><a href="#" class="open_popup_1" rel="popup1">Шаг 1</a></li>
+            <li class="left step2"><a href="#" class="open_popup_2" rel="popup2">Шаг 2</a></li>
+            <li class="left step3"><a href="#">Шаг 3</a></li>
+          </ul>
+        </div>
+        <p class="p-form-popup-step-one">Пожалуйста, оставьте Ваши контактные данные для того, чтобы мы могли связаться с Вами.</p>
+        <form action="#" class="form-popup-step-three clearfix">
+          <p class="your-name clearfix">
+            <label for="your-name">Ваше имя:</label>
+            <input type="text" name="#" id="your-name" class="left"  placeholder="Александр">
+          </p>
+          <p class="your-phone clearfix">
+            <label for="your-phone">Ваш телефон:</label>
+            <input type="tel" name="#" id="your-phone" class="right" placeholder="+79453245596">
+          </p>
+          <p class="your-email">
+            <label for="your-email">Ваше email:</label>
+            <input type="email" name="#" id="your-email" placeholder="alex@gmail.com">
+          </p>
+          <span class="p-form-popup-step-one">Выберите удобный для вас офис:</span>
+          <p class="specify-the-city clearfix">
+            <label for="specify-the-city">Укажите город</label>
+            <select name="#" id="specify-the-city" class="left">
+              <option value="">Санкт-Петербург</option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+            </select>
+          </p>
+          <p class="office clearfix">
+            <label for="office">Офис</label>
+            <select name="#" id="office" class="right">
+              <option value="">Санкт-Петербург</option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+            </select>
+          </p>
+        </form>
+        <button class="btn-1">Получить лучшие предложения</button>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <script src="libs/jquery/jquery-3.1.1.min.js"></script>
+  <script src="libs/rating_jquery/js/jquery.raty.js"></script>
+  <script src="libs/mmenu/dist/jquery.mmenu.all.min.js"></script>
+  <script src="js/common.js"></script>
+
+</body>
+</html>

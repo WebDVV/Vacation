@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <title>Vacation-news-detail</title>
+
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+  <link href="libs/bootstrap/bootstrap-grid.min.css" rel="stylesheet">
+  <link href="libs/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="libs/rating_jquery/css/demo.css" rel="stylesheet">
+  <link href="libs/mmenu/dist/jquery.mmenu.all.css" rel="stylesheet">
+
+  <link href="css/fonts.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/media.css" rel="stylesheet">
+  <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac1851679d75fc034584962a27c28f29227891b71a4aef74cbb4f8bddbb2a7478&amp;width=100%25&amp;height=400px&amp;lang=ru_RU&amp;scroll=true&amp;id=mymap"></script>
+</head>
+<body>
+  <!-- <a href="#" class="pick-up-the-tour open_popup hidden-xs" rel="popup1"></a> -->
+  <div id="wrapper">
+    <header class="header cont-head" style="background-image: url(img/bg_header.jpg);">
+      <div class="header-contacts">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-5 logo-wrap">
+              <button id="mmenu-icon" class="hamburger left hidden-lg hidden-md hidden-sm" type="button"></button>
+              <a href="#" class="logo">
+                <img src="img/logoooooo.png" alt="Отпуск в лето">
+              </a>
+            </div>
+            <div class="col-lg-7 col-md-6 col-sm-6 hidden-xs">
+              <div class="address">
+                <span>Мы находимся</span>
+                <p>г. Санкт-Петербург <br>м. Садовая, ул. Ефимова, д. 4А, оф 320</p>
+              </div>
+              <div class="time hidden-sm">
+                <span>Часы работы:</span>
+                <p>Пн-Пт с 11:00 до 20:00; <br>Сб-Вс - выходной</p>
+              </div>
+              <div class="tel">
+                <span>Контактный телефон</span>
+                <p>+7 (812) 309 04 49</p>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 clearfix phone">
+              <button id="" class="btn-phone right hidden-lg hidden-md hidden-sm" type="button"></button>
+              <button class="btn-1 hidden-xs">Заказать звонок</button>
+              <p class="p-phone right hidden-lg hidden-md hidden-sm">+7 (812) 309 04 49</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav id="my-menu">
+        <ul>
+          <li><a href="#">Поиск туров</a></li>
+          <li><a href="#">О нас</a></li>
+          <li><a href="#">Страны</a></li>
+          <li><a href="#">Туры со скидками</a></li>
+          <li><a href="#">Контакты</a></li>
+          <li><a href="#">Это интересно</a></li>
+          <li><a href="#">Скидки</a></li>
+          <li><a href="#">Авиабилеты</a></li>
+          <li><a href="#">Туры в Японию</a></li>
+          <li><a href="#">Морские круизы</a></li>
+          <li><a href="#">Оплата Online</a></li>
+        </ul>
+      </nav>
+      <nav class="menu hidden-xs">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <ul class="clearfix">
+                <li><a href="#">Поиск туров</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Страны</a></li>
+                <li><a href="#">Туры со скидками</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Это интересно</a></li>
+                <li><a href="#">Скидки</a></li>
+                <li><a href="#">Авиабилеты</a></li>
+                <li><a href="#">Туры в Японию</a></li>
+                <li><a href="#">Морские круизы</a></li>
+                <li><a href="#">Оплата Online</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+
+    
+    <section class="news-detail-page">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li><a href="#">Главная</a></li>
+          <li>&mdash;</li>
+          <li><a href="#">Новости</a></li>
+          <li>&mdash;</li>
+          <li class="active"><a href="#">50 оттенков Синая: почему хоть раз в</a></li>
+        </ul>
+        <div class="row">
+          <div class="col-md-9 col-sm-8 col-xs-12">
+            <div class="new-detail-wrap">
+              <h1>50 оттенков Синая: почему хоть раз в жизни стоит съездить в Шарм-эль-Шейх</h1>
+              <span class="data">27.04.2017</span>
+              <p class="italic">Египет предлагает 33 удовольствия сразу: хаммамы, деликатесы, шоу крокодилов <br>и священная гора</p>
+              <p>В Шарм-эль-Шейхе прибывших встречают горы в синей дымке. Где-то за ними  — поселения бедуинов и редкие тропки квадроциклистов, еще дальше — те самые библейские места. Здесь, на Синае, древние предания, современная экзотика пустынной жизни и все курортные прелести высшего разряда — в одном флаконе, и желательно охватить все 33 удовольствия.</p>
+              <img src="img/new-detail-1.png" alt="Фото">
+              <p>Ведь вы не отдохнули в Египте, если не видели ритуального танца дервишей и заблудившихся в кораллах цветастых рыб, не проехали гордо на верблюде, ощущая себя почти эмиром. И не отдохнули вообще, если не гуляли среди цветущих розовых бугенвиллий и кактусов размером с тыкву, не пили коктейль в баре у бассейна и не выходили на залитый южным солнцем балкон, чтобы сказать Красному морю: "Доброе утро!"</p>
+              <h3>ШАРМ СЕГОДНЯ: КАЗАХИ, ФИЗАЛИС И СКИДКИ</h3>
+              <p>После того как в Египет перестали ездить русские туристы, обнаружилось, что здесь отдыхают много людей других национальностей. Сегодня здесь полно казахов, европейцев из разных стран, китайцев и самих египтян, которые раньше в основном ограничивались отдыхом на море лишь по большим мусульманским праздникам. Поэтому атмосфера царит мультикультурная, можно заводить друзей-иностранцев и нет навязчивого ощущения, что отдыхаешь где-то в Крыму или в Бердянске.Как всегда, искусные повара здесь колдуют над морепродуктами, пряными национальными блюдами и нарядными сладостями, вырезают шедевры из арбузов и тыкв, создают экспозиции шоколадных скульптур, и каждый обед-ужин — словно праздник.</p>
+              <img src="img/new-detail-2.png" alt="Фото">
+              <p class="p-right">Праздник для тела. На ужин — как на выставку</p>
+              <p>Шарм в любое время года — это солнечная сказка, в которой все обустроено для гостя, начиная с аккуратных газонов и клумб вдоль дорог и заканчивая богатой программой отдыха — как в отеле, так и вне. Массаж на пляже, созерцание пестрых рыбок с пирса, морские прогулки на яхте и сафари в пустыне доступны круглый год. Но если не любите тропического зноя, лучше ехать в Египет в апреле-мае, когда комфортно и купаться, и загорать, и ездить на экскурсии. Тем более что в мае уже появляются первые египетские арбузы и виноград, еще в разгаре сезон великолепных сладких апельсинов и клубники, как раз время есть местные грейпфруты, персики и физалис (манго и гранаты созревают к августу, а гуава есть всегда).</p>
+              <div class="prices">
+                <h3>СКОЛЬКО СТОИТ ОТДЫХ В ШАРМЕ</h3>
+                <p class="p-italic">6—7 дней, 7—8 ночей, "все включено", отели 4—5* на первой линии, за двоих</p>
+                <span>В мае</span>
+                <ul>
+                  <hr class="disck"><li>отель 5&#042; &mdash; от &#036;850</li>
+                  <hr class="disck"><li>отель 4&#042; &mdash; от &#036;668</li>
+                </ul>
+                <span>Ценник туриста</span>
+                <ul>
+                  <hr class="disck"><li>1 кг розового изюма &mdash; &#036;2,3</li>
+                  <hr class="disck"><li>Гуава, 1 кг &mdash; &#036;0,8</li>
+                  <hr class="disck"><li>Туфельки в восточном стиле &mdash; &#036;1,9 &mdash; 2,7</li>
+                  <hr class="disck"><li>Кальян в кафе &mdash; &#036;3</li>
+                  <hr class="disck"><li>Проезд по Шарм-эль-Шейху &mdash; &#036;0,08 &mdash; 0,2</li>
+                </ul>
+              </div>
+            </div>
+            <a href="#" class="ago">Вернуться к списку новостей</a>
+          </div>
+          <div class="col-md-3 col-sm-4 hidden-xs">
+            <aside>
+              <h1>Горящие туры</h1>
+              <div class="tours-wrap">
+                <a href="#" class="a-tours">
+                  <p class="lowering">-33%</p>
+                  <div class="tours-item">
+                    <div class="img-wrap">
+                      <img src="img/tours1.png" alt="Фото">
+                    </div>
+                    <div class="description clearfix">
+                      <div class="desc-info left">
+                        <p><span>Мармарис, </span>Турция</p>
+                        <div class="star">
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                        <p>из Санкт-Петербурга <br>14 мая, 7 ночей</p>
+                      </div>
+                      <div class="desc-price right">
+                        <p>15 308 <span>Р.</span></p>
+                        <span>22 022 Р.</span>
+                        <p>-33%</p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="a-tours">
+                  <p class="lowering">-33%</p>
+                  <div class="tours-item">
+                    <div class="img-wrap">
+                      <img src="img/tours1.png" alt="Фото">
+                    </div>
+                    <div class="description clearfix">
+                      <div class="desc-info left">
+                        <p><span>Мармарис, </span>Турция</p>
+                        <div class="star">
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                        <p>из Санкт-Петербурга <br>14 мая, 7 ночей</p>
+                      </div>
+                      <div class="desc-price right">
+                        <p>15 308 <span>Р.</span></p>
+                        <span>22 022 Р.</span>
+                        <p>-33%</p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="a-tours">
+                  <p class="lowering">-33%</p>
+                  <div class="tours-item">
+                    <div class="img-wrap">
+                      <img src="img/tours1.png" alt="Фото">
+                    </div>
+                    <div class="description clearfix">
+                      <div class="desc-info left">
+                        <p><span>Мармарис, </span>Турция</p>
+                        <div class="star">
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                        <p>из Санкт-Петербурга <br>14 мая, 7 ночей</p>
+                      </div>
+                      <div class="desc-price right">
+                        <p>15 308 <span>Р.</span></p>
+                        <span>22 022 Р.</span>
+                        <p>-33%</p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <footer id="footer" style="background-color: #323840;">
+      <div class="container">
+        <div class="row clearfix">
+          <div class="col-lg-3 col-md-3 col-sm-5 col-xs-5 f-logo-wrap">
+            <div class="f-logo">
+              <img src="img/logoooooo.png" alt="Логотип">
+              <p class="copy">&copy;2012-2014 "Отпуск в лето"СПБ. Копирование <br>материалов с сайта запрещено</p>
+              <a href="#">Карта сайта</a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-3 col-xs-3 menu-wrap">
+            <ul class="menu-one left">
+              <li><a href="#">Поиск туров</a></li>
+              <li><a href="#">О нас</a></li>
+              <li><a href="#">Страны</a></li>
+              <li><a href="#">Туры со скидками</a></li>
+              <li><a href="#">Контакты</a></li>
+              <li><a href="#">Это интересно</a></li>
+            </ul>
+            <ul class="menu-two right">
+              <li><a href="#">Скидки</a></li>
+              <li><a href="#">Авиабилеты</a></li>
+              <li><a href="#">Туры в Японию</a></li>
+              <li><a href="#">Морские круизы</a></li>
+              <li><a href="#">Оплата Online</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-5 col-md-5 col-sm-4 col-xs-4 contacts-wrap">
+            <div class="address-wrap">
+              <div class="address">
+                <span>Мы находимся</span>
+                <p>г. Санкт-Петербург <br>м. Садовая, ул. Ефимова, д. 4А, оф 320</p>
+              </div>
+              <div class="time">
+                <span>Часы работы:</span>
+                <p>Пн-Пт с 11:00 до 20:00; <br>Сб-Вс - выходной</p>
+              </div>
+            </div>
+            <div class="tel right">
+              <span>Контактный телефон</span>
+              <p>+7 (812) 309 04 49</p>
+              <button class="btn-1">Заказать звонок</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  
+
+
+  <!-- popup -->
+
+
+
+  <!-- <div class="overlay"></div>
+  <div class="popup popup-feedback" id="popup2">
+    <span class="close"></span>
+    <div class="popup-wrap">
+      <h1>Задать вопрос</h1>
+      <form action="#" id="feedback">
+        <p class="you-name">
+          <label for="you-name">Ваше имя:</label>
+          <input type="text" name="#" id="you-name" placeholder="Александр">
+        </p>
+        <p class="email">
+          <label for="email">Контактный email:</label>
+          <input type="email" name="#" id="email" placeholder="yourmail@gmail.com">
+        </p>
+        <p class="question">
+          <label for="question">Задайте свой вопрос</label>
+          <textarea name="question" id="question">Введите текст</textarea>
+        </p>
+        <button class="btn-1">Задать вопрос</button>
+      </form>
+    </div>
+  </div> -->
+
+
+
+
+
+
+
+  <script src="libs/jquery/jquery-3.1.1.min.js"></script>
+  <script src="libs/rating_jquery/js/jquery.raty.js"></script>
+  <script src="libs/mmenu/dist/jquery.mmenu.all.min.js"></script>
+  <script src="js/common.js"></script>
+
+</body>
+</html>

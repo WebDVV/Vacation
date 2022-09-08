@@ -1,0 +1,63 @@
+@font-face {
+    font-family: "PFDinTextCondPro-Thin";
+    src: url('../fonts/PFDinTextCondPro-Thin/PFDinTextCondPro-Thin.eot');
+    src: url('../fonts/PFDinTextCondPro-Thin/PFDinTextCondPro-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PFDinTextCondPro-Thin/PFDinTextCondPro-Thin.woff') format('woff'),
+        url('../fonts/PFDinTextCondPro-Thin/PFDinTextCondPro-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PFDinTextCondPro-XThin';
+    src: url('../fonts/PFDinTextCondPro-XThin/PFDinTextCondPro-XThin.eot');
+    src: url('../fonts/PFDinTextCondPro-XThin/PFDinTextCondPro-XThin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PFDinTextCondPro-XThin/PFDinTextCondPro-XThin.woff') format('woff'),
+        url('../fonts/PFDinTextCondPro-XThin/PFDinTextCondPro-XThin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PFDinTextCondPro-Light';
+    src: url('../fonts/PFDinTextCondPro-Light/PFDinTextCondPro-Light.eot');
+    src: url('../fonts/PFDinTextCondPro-Light/PFDinTextCondPro-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PFDinTextCondPro-Light/PFDinTextCondPro-Light.woff') format('woff'),
+        url('../fonts/PFDinTextCondPro-Light/PFDinTextCondPro-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PFDinTextCondPro-LightItalic';
+    src: url('../fonts/PFDinTextCondPro-LightItalic/PFDinTextCondPro-LightItalic.eot');
+    src: url('../fonts/PFDinTextCondPro-LightItalic/PFDinTextCondPro-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PFDinTextCondPro-LightItalic/PFDinTextCondPro-LightItalic.woff') format('woff'),
+        url('../fonts/PFDinTextCondPro-LightItalic/PFDinTextCondPro-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'PFDinTextCondPro-Medium';
+    src: url('../fonts/PFDinTextCondPro-Medium/PFDinTextCondPro-Medium.eot');
+    src: url('../fonts/PFDinTextCondPro-Medium/PFDinTextCondPro-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PFDinTextCondPro-Medium/PFDinTextCondPro-Medium.woff') format('woff'),
+        url('../fonts/PFDinTextCondPro-Medium/PFDinTextCondPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PFDinTextCondPro-Regular';
+    src: url('../fonts/PFDinTextCondPro-Regular/PFDinTextCondPro-Regular.eot');
+    src: url('../fonts/PFDinTextCondPro-Regular/PFDinTextCondPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PFDinTextCondPro-Regular/PFDinTextCondPro-Regular.woff') format('woff'),
+        url('../fonts/PFDinTextCondPro-Regular/PFDinTextCondPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PFDinTextCondPro-XBlack';
+    src: url('../fonts/PFDinTextCondPro-XBlack/PFDinTextCondPro-XBlack.eot');
+    src: url('../fonts/PFDinTextCondPro-XBlack/PFDinTextCondPro-XBlack.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PFDinTextCondPro-XBlack/PFDinTextCondPro-XBlack.woff') format('woff'),
+        url('../fonts/PFDinTextCondPro-XBlack/PFDinTextCondPro-XBlack.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}

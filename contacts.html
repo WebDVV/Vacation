@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <title>Vacation-contacts</title>
+
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+  <link href="libs/bootstrap/bootstrap-grid.min.css" rel="stylesheet">
+  <link href="libs/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="libs/rating_jquery/css/demo.css" rel="stylesheet">
+  <link href="libs/mmenu/dist/jquery.mmenu.all.css" rel="stylesheet">
+
+  <link href="css/fonts.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/media.css" rel="stylesheet">
+  <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac1851679d75fc034584962a27c28f29227891b71a4aef74cbb4f8bddbb2a7478&amp;width=100%25&amp;height=400px&amp;lang=ru_RU&amp;scroll=true&amp;id=mymap"></script>
+</head>
+<body>
+  <!-- <a href="#" class="pick-up-the-tour open_popup hidden-xs" rel="popup1"></a> -->
+  <div id="wrapper">
+    <header class="header cont-head" style="background-image: url(img/bg_header.jpg);">
+      <div class="header-contacts">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-5 logo-wrap">
+              <button id="mmenu-icon" class="hamburger left hidden-lg hidden-md hidden-sm" type="button"></button>
+              <a href="#" class="logo">
+                <img src="img/logoooooo.png" alt="Отпуск в лето">
+              </a>
+            </div>
+            <div class="col-lg-7 col-md-6 col-sm-6 hidden-xs">
+              <div class="address">
+                <span>Мы находимся</span>
+                <p>г. Санкт-Петербург <br>м. Садовая, ул. Ефимова, д. 4А, оф 320</p>
+              </div>
+              <div class="time hidden-sm">
+                <span>Часы работы:</span>
+                <p>Пн-Пт с 11:00 до 20:00; <br>Сб-Вс - выходной</p>
+              </div>
+              <div class="tel">
+                <span>Контактный телефон</span>
+                <p>+7 (812) 309 04 49</p>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 clearfix phone">
+              <button id="" class="btn-phone right hidden-lg hidden-md hidden-sm" type="button"></button>
+              <button class="btn-1 hidden-xs">Заказать звонок</button>
+              <p class="p-phone right hidden-lg hidden-md hidden-sm">+7 (812) 309 04 49</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav id="my-menu">
+        <ul>
+          <li><a href="#">Поиск туров</a></li>
+          <li><a href="#">О нас</a></li>
+          <li><a href="#">Страны</a></li>
+          <li><a href="#">Туры со скидками</a></li>
+          <li><a href="#">Контакты</a></li>
+          <li><a href="#">Это интересно</a></li>
+          <li><a href="#">Скидки</a></li>
+          <li><a href="#">Авиабилеты</a></li>
+          <li><a href="#">Туры в Японию</a></li>
+          <li><a href="#">Морские круизы</a></li>
+          <li><a href="#">Оплата Online</a></li>
+        </ul>
+      </nav>
+      <nav class="menu hidden-xs">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <ul class="clearfix">
+                <li><a href="#">Поиск туров</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Страны</a></li>
+                <li><a href="#">Туры со скидками</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Это интересно</a></li>
+                <li><a href="#">Скидки</a></li>
+                <li><a href="#">Авиабилеты</a></li>
+                <li><a href="#">Туры в Японию</a></li>
+                <li><a href="#">Морские круизы</a></li>
+                <li><a href="#">Оплата Online</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <section class="contact-page">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li><a href="#">Главная</a></li>
+          <li>&mdash;</li>
+          <li class="active"><a href="#">Контакты</a></li>
+        </ul>
+        <h1>Контакты</h1>
+        <div class="row">
+          <div class="col-md-5 col-sm-5 col-xs-12">
+            <div class="contact-item1">
+              <h5>Контактные телефоны:</h5>
+              <span>+7(812) 309 04 49 </span>  <span>  +7(911) 987 07 75</span>
+            </div>
+            <div class="contact-item2">
+              <h5>Мы находимся:</h5>
+              <p>Санкт-Петербург <br>ул.Ефимова д 4А, оф.309 (БЦ "Мир"/"Трезубец")</p>
+            </div>
+            <div class="contact-item3">
+              <h5>Часы работы:</h5>
+              <p>Пн-Пт с 11:00 до 20:00 <br>Сб-Вс - выходной</p>
+            </div>
+            <button class="btn-1 open_popup" rel="popup2">Обратная связь</button>
+          </div>
+          <div class="col-md-7 col-sm-7 col-xs-12">
+            <div id="mymap"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <footer id="footer" style="background-color: #323840;">
+      <div class="container">
+        <div class="row clearfix">
+          <div class="col-lg-3 col-md-3 col-sm-5 col-xs-5 f-logo-wrap">
+            <div class="f-logo">
+              <img src="img/logoooooo.png" alt="Логотип">
+              <p class="copy">&copy;2012-2014 "Отпуск в лето"СПБ. Копирование <br>материалов с сайта запрещено</p>
+              <a href="#">Карта сайта</a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-3 col-xs-3 menu-wrap">
+            <ul class="menu-one left">
+              <li><a href="#">Поиск туров</a></li>
+              <li><a href="#">О нас</a></li>
+              <li><a href="#">Страны</a></li>
+              <li><a href="#">Туры со скидками</a></li>
+              <li><a href="#">Контакты</a></li>
+              <li><a href="#">Это интересно</a></li>
+            </ul>
+            <ul class="menu-two right">
+              <li><a href="#">Скидки</a></li>
+              <li><a href="#">Авиабилеты</a></li>
+              <li><a href="#">Туры в Японию</a></li>
+              <li><a href="#">Морские круизы</a></li>
+              <li><a href="#">Оплата Online</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-5 col-md-5 col-sm-4 col-xs-4 contacts-wrap">
+            <div class="address-wrap">
+              <div class="address">
+                <span>Мы находимся</span>
+                <p>г. Санкт-Петербург <br>м. Садовая, ул. Ефимова, д. 4А, оф 320</p>
+              </div>
+              <div class="time">
+                <span>Часы работы:</span>
+                <p>Пн-Пт с 11:00 до 20:00; <br>Сб-Вс - выходной</p>
+              </div>
+            </div>
+            <div class="tel right">
+              <span>Контактный телефон</span>
+              <p>+7 (812) 309 04 49</p>
+              <button class="btn-1">Заказать звонок</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  
+
+
+  <!-- popup -->
+
+
+
+  <div class="overlay"></div>
+  <div class="popup popup-feedback" id="popup2">
+    <span class="close"></span>
+    <div class="popup-wrap">
+      <h1>Задать вопрос</h1>
+      <form action="#" id="feedback">
+        <p class="you-name">
+          <label for="you-name">Ваше имя:</label>
+          <input type="text" name="#" id="you-name" placeholder="Александр">
+        </p>
+        <p class="email">
+          <label for="email">Контактный email:</label>
+          <input type="email" name="#" id="email" placeholder="yourmail@gmail.com">
+        </p>
+        <p class="question">
+          <label for="question">Задайте свой вопрос</label>
+          <textarea name="question" id="question">Введите текст</textarea>
+        </p>
+        <button class="btn-1">Задать вопрос</button>
+      </form>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <script src="libs/jquery/jquery-3.1.1.min.js"></script>
+  <script src="libs/rating_jquery/js/jquery.raty.js"></script>
+  <script src="libs/mmenu/dist/jquery.mmenu.all.min.js"></script>
+  <script src="js/common.js"></script>
+
+</body>
+</html>
